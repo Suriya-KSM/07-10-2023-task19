@@ -46,7 +46,8 @@ class web_page:
             t.close()
 
             print('Contents of the webpage saved in the ',text_file, ' file\n')
-        
+          
+        #Exception handling
        except NoSuchElementException as selenium_error:
             print("Element not found", selenium_error)
         
